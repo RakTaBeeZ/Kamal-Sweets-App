@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.KamalSweets" parent="Theme.MaterialComponents.DayNight">
+        <!-- Customize your light theme here. -->
+
+        <item name="actionBarTheme">@style/ThemeOverlay.ActionBar</item>
+        <!--  This will change ActionBar TextColor to White  -->
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+<!--         <item name="colorPrimary">@color/colorPrimary</item>-->
+    </style>
+
+    <style name="Theme.KamalSweets" parent="Base.Theme.KamalSweets" />
+
+    <style name="ThemeOverlay.ActionBar" parent="">
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+</resources>

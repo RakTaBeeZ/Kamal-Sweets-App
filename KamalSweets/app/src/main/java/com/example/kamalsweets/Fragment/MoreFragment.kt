@@ -17,6 +17,7 @@ import com.google.firebase.ktx.Firebase
 class MoreFragment : Fragment() {
 private lateinit var binding: FragmentAboutBinding
     private lateinit var list:ArrayList<AllOrderModel>
+    private lateinit var adapter:AllOrderAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,13 +38,16 @@ private lateinit var binding: FragmentAboutBinding
                         val data=doc.toObject(AllOrderModel::class.java)
                         list.add(data)
                     }
-                    val adapter = AllOrderAdapter(list,requireContext())
+                    adapter = AllOrderAdapter(list,requireContext())
                     binding.recyclerView.adapter=adapter
+                    adapter.notifyDataSetChanged()
                 }
+
 
         }.addOnFailureListener {
             Toast.makeText(requireContext(), "Fetching Order Details Went Wrong", Toast.LENGTH_SHORT).show()
         }
+
         return binding.root
     }
 

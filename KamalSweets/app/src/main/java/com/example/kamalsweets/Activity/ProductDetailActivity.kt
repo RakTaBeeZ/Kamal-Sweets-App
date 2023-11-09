@@ -34,7 +34,6 @@ class ProductDetailActivity : AppCompatActivity() {
         setContentView(binding.root)
         getProductDetail(intent.getStringExtra("id"))
         Log.d("Counts->","1")
-
     }
 
     private fun getProductDetail(prodId: String?) {

@@ -108,10 +108,10 @@ class LoginActivity : AppCompatActivity() {
         }
 
         override fun onVerificationFailed(e: FirebaseException) {
-            Toast.makeText(this@LoginActivity, "${e.message}", Toast.LENGTH_LONG).show()
+            Toast.makeText(this@LoginActivity, "${e.localizedMessage}", Toast.LENGTH_LONG).show()
             dialog.dismiss()
             binding.rootLayout.visibility=View.VISIBLE
-            Log.d("user", "onVerificationFailed: ${e.message}")
+            Log.d("user", "onVerificationFailed: ${e.localizedMessage}")
         }
 
         override fun onCodeSent(

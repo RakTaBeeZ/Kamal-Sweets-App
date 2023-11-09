@@ -44,7 +44,6 @@ class CheckoutActivity : AppCompatActivity(),PaymentResultListener {
         var price= pricePreference.getFloat("total",0.00f)
 
 
-
         if(paymentStatus==true){
             val description="Best Payment Method To Pay"
             val checkout=Checkout()

@@ -108,6 +108,9 @@ class MainActivity : AppCompatActivity() {
                 finish()
 
             }
+            R.id.about->{
+
+            }
 
         }
         return super.onOptionsItemSelected(item)
@@ -118,10 +121,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
 
-        if(i==0){
+        if (i == 0) {
             super.onBackPressed()
             finish()
         }
-
     }
 }

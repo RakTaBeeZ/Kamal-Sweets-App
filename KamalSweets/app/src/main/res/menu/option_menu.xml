@@ -13,6 +13,11 @@
         android:layout_height="wrap_content"
         android:title="Number" />
     <item
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="About us" />
+    <item
         android:id="@+id/logout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

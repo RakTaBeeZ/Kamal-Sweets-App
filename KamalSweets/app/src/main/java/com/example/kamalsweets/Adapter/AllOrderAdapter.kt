@@ -43,9 +43,11 @@ class AllOrderAdapter(val list: ArrayList<AllOrderModel>, val context: Context) 
                 Toast.makeText(context, "Please Provide Reason! ", Toast.LENGTH_SHORT).show()
             }
             else{
+                Toast.makeText(context, "Order is canceled", Toast.LENGTH_SHORT).show()
                 val cancelReason=holder.binding.cancelReason.text.toString()
             updateStatus("Canceled",list[position].orderId!!,cancelReason)
-            holder.binding.cancelButton.isEnabled = false}
+            holder.binding.cancelButton.visibility = View.INVISIBLE
+            }
 
         }
 
@@ -57,20 +59,24 @@ class AllOrderAdapter(val list: ArrayList<AllOrderModel>, val context: Context) 
             }
             "Confirmed"->{
                 holder.binding.productStatus.setTextColor(Color.parseColor("green"))
-                holder.binding.productStatus.text="Order Confirmed"
+                holder.binding.productStatus.text="Order Confirmed, Preparing..."
+                holder.binding.cancelButton.visibility = View.INVISIBLE
             }
             "Dispatched"->{
                 holder.binding.productStatus.setTextColor(Color.parseColor("#FFA500"))
                 holder.binding.productStatus.text="Order Has Been Dispatched From Store"
+                holder.binding.cancelButton.visibility = View.INVISIBLE
                 fetchDeliryDetails(holder,list[position].orderId)
             }
             "Delivered"->{
                 holder.binding.productStatus.setTextColor(Color.parseColor("green"))
                 holder.binding.productStatus.text="Order Delivered"
+                holder.binding.cancelButton.visibility = View.INVISIBLE
             }
             "Canceled"->{
                 holder.binding.productStatus.setTextColor(Color.parseColor("red"))
                 holder.binding.productStatus.text="Order Canceled"
+                holder.binding.cancelButton.visibility = View.INVISIBLE
             }
         }
 

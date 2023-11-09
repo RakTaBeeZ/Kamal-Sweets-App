@@ -19,7 +19,7 @@ class CategoryActivity : AppCompatActivity() {
 
     //For this activity CategoryProductAdapter.kt is used
     //item_category_product_layout is used to show in recyclerview of activity_category.xml
-    //
+
     private lateinit var binding:ActivityCategoryBinding
     private var list=ArrayList<AddProductModel>()
     private var adapter=CategoryProductAdapter(this, list)

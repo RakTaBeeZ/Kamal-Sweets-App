@@ -63,5 +63,6 @@ Feedback & review system
 
 ## 👨‍💻 Developer
 Naresh Choudhary
-📧 naresh@example.com
+
+📧 code.decoder1234@gmail.com
 

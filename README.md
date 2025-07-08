@@ -40,5 +40,28 @@ This is the **User-side Android application** of a food ordering system where cu
 1. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/food-ordering-user-app.git
-  `
-  
+2. Open the project in Android Studio.
+3. Sync Gradle and build the project. 
+4. Run the app on an emulator or physical device.
+
+## 📸 Screenshots
+| Home Screen               | Food List                 | Cart                      | Order Tracking                |
+| ------------------------- | ------------------------- | ------------------------- | ----------------------------- |
+|  | ![](screenshots/list.png) | ![](screenshots/cart.png) | ![](screenshots/tracking.png) |
+
+## 🔗 Related Project
+Admin App Repository
+
+## 🔮 Future Improvements
+Apply coupon codes / discounts
+
+Delivery time estimate
+
+Push notifications for order status
+
+Feedback & review system
+
+## 👨‍💻 Developer
+Naresh Choudhary
+📧 naresh@example.com
+

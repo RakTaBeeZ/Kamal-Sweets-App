@@ -50,7 +50,7 @@ This is the **User-side Android application** of a food ordering system where cu
 |  | ![](screenshots/list.png) | ![](screenshots/cart.png) | ![](screenshots/tracking.png) |
 
 ## 🔗 Related Project
-Admin App Repository
+[Admin App Repository](https://github.com/RakTaBeeZ/Kamal-Sweets-Admin-App)
 
 ## 🔮 Future Improvements
 Apply coupon codes / discounts
